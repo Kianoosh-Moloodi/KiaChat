@@ -1,12 +1,10 @@
 import 'react-native-gesture-handler';
-
 import { StyleSheet, Text } from 'react-native';
 import React, { useCallback, useEffect, useState } from 'react';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
-
+import { Ionicons } from '@expo/vector-icons';  // Add this import statement
 import { AppNavigator } from './navigation/AppNavigator';
 
 // Prevent splash screen from hiding automatically
@@ -67,7 +65,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  lable: {
+  label: {
     color: 'black',
     fontSize: 18,
     fontFamily: 'regular',
